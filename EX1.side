@@ -1,0 +1,86 @@
+{
+  "id": "f7f98ab7-d04b-4b80-9ac3-6eed1fc6a7d5",
+  "version": "2.0",
+  "name": "EX1",
+  "url": "https://safatelli.github.io",
+  "tests": [{
+    "id": "80131d90-ea6e-4fc0-beef-13a1f0c6de55",
+    "name": "Test1",
+    "commands": [{
+      "id": "1feef9d2-864e-48e3-90c6-104168fc4a75",
+      "comment": "",
+      "command": "open",
+      "target": "/tp-test-logiciel/assets/hello.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26da7bb2-893b-4d64-a853-49af4102659e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "951x820",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9985a85d-44c6-40c3-80c0-1bfbe8d7352f",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86a209b8-9604-4d4e-8a5b-e22ac6ebd5e4",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "abs"
+    }, {
+      "id": "9aa34856-13e6-4049-b496-3235d54be91e",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='afficherBonjour()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Bonjour')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "52bc8cbb-bdc2-4625-9b4b-be3fb8f0e091",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=message",
+      "targets": [
+        ["id=message", "id"],
+        ["css=#message", "css:finder"],
+        ["xpath=//p[@id='message']", "xpath:attributes"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Bonjour, abs !')]", "xpath:innerText"]
+      ],
+      "value": "Bonjour, abs !"
+    }]
+  }],
+  "suites": [{
+    "id": "9a97c407-f98c-4fa2-8451-feb231e8ffa5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["80131d90-ea6e-4fc0-beef-13a1f0c6de55"]
+  }],
+  "urls": ["https://safatelli.github.io/"],
+  "plugins": []
+}
